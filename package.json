@@ -1,14 +1,16 @@
 {
   "name": "cc.demo.embedded",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "title": "Embedded Demo Module",
   "description": "Module created to demonstrate pkx.",
   "license": "Apache-2.0",
-  "main": "embedded.js",
-  "pkxDependencies": [
-    {
-      "package": "./",
-      "resource": "embedded-data.json"
-    }
-  ]
+  "pkx" : {
+    "main": "embedded.js",
+    "dependencies": [
+      {
+        "package": "./",
+        "resource": "embedded-data.json"
+      }
+    ]
+  }
 }
